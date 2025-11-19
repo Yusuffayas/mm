@@ -135,7 +135,7 @@ Each PDF passes through pre-processing, content extraction, model analysis, comp
 3. OCR mathematical regions and convert them into LaTeX / MathML tokens.  
 4. Store structured outputs into JSON.
 
-4.2.2 Gemini 2.5 Flash Integration
+### 4.2.2 Gemini 2.5 Flash Integration
 
 Uses Google AI Studio with API key + secure endpoints.
 
@@ -172,7 +172,7 @@ Sometimes truncates long tables
 
 Has limited control over decoding parameters (temperature, beams)
 
-4.2.3 Fine-Tuned Mistral 7B Model with LoRA
+### 4.2.3 Fine-Tuned Mistral 7B Model with LoRA
 
 Fine-tuned using LLaMA Factory on a GPU server.
 
@@ -209,7 +209,7 @@ GPU	A100 80GB
 
 After training, the LoRA adapter was merged, and the final checkpoint was uploaded to Hugging Face.
 
-4.2.4 Computation Engine
+### 4.2.4 Computation Engine
 
 Uses SymPy for symbolic and numeric evaluation.
 
@@ -228,7 +228,7 @@ Example:
 expr = sympify("E = m * c**2")
 result = expr.subs({"m": 2, "c": 3})
 
-4.2.5 Output Formatting and Storage
+### 4.2.5 Output Formatting and Storage
 
 Final results are converted into a structured table:
 
@@ -242,7 +242,7 @@ Archived in AWS S3
 
 Displayed in a React dashboard
 
-4.3 User Interface Prototype
+## 4.3 User Interface Prototype
 
 A cross-platform UI was built using React Native.
 
@@ -258,7 +258,7 @@ Real-time progress bar
 
 Latency & accuracy graphs
 
-4.4 Cloud Deployment
+## 4.4 Cloud Deployment
 
 Deployment was implemented using a hybrid multi-cloud approach:
 
