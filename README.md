@@ -91,23 +91,7 @@ Contains elliptic curve equations, hash functions, and cost tables—ideal for v
 - Python 3.10, PyTorch, Node.js  
 - Custom dataset (~15k equation–solution pairs)
 
-# Chapter 4 – Implementation Details
-
-## 4.1 Workflow
-Two pipelines:
-1. **Gemini Flash (cloud)** for multimodal extraction  
-2. **Mistral 7B LoRA (local GPU)** for symbolic math
-
-## 4.2 Module Implementation
-
-### 4.2.1 PDF Pre-Processing
-- pdfminer.six, PyMuPDF, OpenCV  
-- Steps:
-  1. Convert PDF to images  
-  2. Segment text/equations  
-  3. OCR → LaTeX  
-  4. Save JSON tokens  
-
+---
 
 # Chapter 4 – Implementation Details
 
